@@ -1,0 +1,345 @@
+.mainbackground {
+  background-color: #111;
+}
+
+.LogoBanner {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 3em;
+  top: 0;
+  left: 0;
+  transition: height 120s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+  user-select: none;
+  flex-wrap: nowrap;
+}
+
+.bigLetter{
+  color: white;
+  font-size: 3em;
+}
+
+
+.LogoBanner:Hover {
+  height: 4.25em;
+
+}
+
+.searchBar {
+  background-color: rgba(0, 0, 0, 255);
+  font-size: 1.25em;
+  position: absolute;
+  color: #FFF;
+  width:25em;
+  height:2em;
+  left: 50%;
+  top:5em;
+  transition: 320ms;
+  vertical-align: middle;
+  transform: translate(-50%);
+  line-height: 2em;
+  border: 2em;
+  border-radius: 2em;
+  border-color: rgba(31, 27, 150,255);
+  text-indent: 1em;
+  color: rgb(115, 7, 84);
+}
+
+
+.searchBar:Hover {
+  border-color: rgb(115, 7, 84);
+  color: rgb(220, 2, 150);
+
+}
+
+.searchBar:focus {
+  border-color: rgb(115, 7, 84);
+  color:#FFFFFF;
+}
+
+.bannerTextbox {
+  background-color: rgba(0, 0, 0, 0.0);
+  font-size: 1.25em;
+  position: absolute;
+  color: #FFF;
+  width:25em;
+  height:2em;
+  transform: translate(-5em,-4em);
+  transition: 320ms;
+  border-radius: 12em;
+  border-color: rgb(31, 27, 150);
+  text-indent: 1em;
+  color: rgb(115, 7, 84);
+}
+
+
+.bannerTextbox:Hover {
+  border-color: rgb(115, 7, 84);
+  color: rgb(220, 2, 150);
+
+}
+
+.bannerTextbox:focus {
+  border-color: rgb(115, 7, 84);
+  color:#FFFFFF;
+}
+
+.LogoBanner:Hover .bannerTextbox:nth-child(6) {
+  transform: translate(-5em);
+  width: 40em;
+}
+
+.LogoBanner:Hover .searchMagni:nth-child(7) {
+  transform: translate(21em);
+}
+
+
+.searchMagni {
+  color:#FFF;
+  position: absolute;
+  width:2em;
+  height:2em;
+  transform: translate(0em,-4em);
+  transition:250ms;
+}
+
+.bannerItem {
+  background-color: rgba(0,0,0,0);
+  position:absolute;
+  color:#fff;
+  left:52em;
+  width: 4em;
+  height:3em;
+  top:-0.75em;
+  border-color: rgb(29, 27, 89);
+  transition:left 120s, height 120s;
+}
+
+.LogoBanner .bannerItem:nth-child(1) {
+  top:0em;
+  transition:left 120s, height 120s;
+}
+
+.LogoBanner .borderMenu:nth-child(4) {
+  top:-3em;
+  transition:left 120s, height 120s;
+  transform: translate(45em);
+}
+
+.LogoBanner .borderMenu:nth-child(5) {
+  top:-3em;
+  transition:left 120s, height 120s;
+  transform: translate(50em);
+}
+
+.LogoBanner:Hover .bannerItem:nth-child(1) {
+    animation: bannerIconHover 450ms linear both;
+}
+
+.LogoBanner:Hover .bannerItem:nth-child(2) {
+    animation: bannerBrandTextHover 450ms linear both;
+}
+
+.LogoBanner:Hover .borderMenu:nth-child(3) {
+  transform: translate(10em,2em);
+  height: 100%em;
+}
+
+.LogoBanner:Hover .borderMenu:nth-child(4) {
+  transform: translate(17em,2em);
+  height: 100%em;
+}
+
+.LogoBanner:Hover .borderMenu:nth-child(5) {
+  transform: translate(50em,3em);
+  height: 100%em;
+}
+
+.LogoBanner:Hover .borderMenu:nth-child(4) {
+  transform: translate(45em,3em);
+  height: 100%em;
+}
+
+.LogoBanner:Hover .borderMenu:nth-child(8) {
+  transform: translate(55em,3em);
+  height: 100%em;
+}
+
+.LogoBanner .borderMenu:nth-child(8) {
+  transform: translate(55em,-4em);
+  height: 100%em;
+}
+
+
+
+.borderMenu:Hover {
+    border-color: rgba(115, 7, 84,100);
+    color: rgb(115, 7, 84);
+}
+
+.borderMenu:active {
+  color: rgb(31, 27, 150);
+}
+
+
+.borderMenu {
+  user-select: none;
+  background-color: rgba(0,0,0,0);
+  color: #FFFFFF;
+  font-size: 2em;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  left: 0em;
+  width: 4em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -3em;
+  transition: left 450ms, height 450ms,border-color 200ms;
+  line-height: 100%;
+  text-align: center;
+  border: 2px;
+  color:#fff;
+  transform: translate(12em);
+}
+
+
+
+#BorderLogo {
+  transition: width 0.3s ease, transform 0.3s ease;
+  padding-left: 1em;
+}
+
+#BorderText {
+  color: white;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for text */
+}
+
+.Square {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  top: 0;
+  left: 0;
+  border-color: #fff;
+}
+
+
+.ScrollView {
+  background-color: #000;
+  border-color: #b245de;
+  border-radius: 1em;
+  border: 1em;
+  position: absolute;
+  width: 90em;
+  height: 45em;
+  top: 11.7em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+
+@keyframes bannerBrandTextHover {
+  0% {
+
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+    transform: translate(0,0);
+  }
+
+  75% {
+    transform: translate(-60em,-7em);
+  }
+
+  80% {
+    width:6em;
+    height: 4.25em;
+    transform: translate(-51em,-3em);
+  }
+
+
+  100% {
+    color: rgba(255,255,255, 255);
+    transform: translate(-51em,1em);
+    width: 6em;
+    height: 4.25em;
+  }
+}
+
+@keyframes bannerIconHover {
+  0% {
+
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  25% {
+    color: rgba(255,255,255, 0);
+    transform: translate(0,0);
+    width:4em;
+    height: 3em;
+  }
+
+  45% {
+    opacity: 0;
+    transform: translate(0,-7em);
+    width:4em;
+    height: 3em;
+  }
+
+  55% {
+    transform: translate(-43em,-7em);
+  }
+
+  75% {
+    width:6em;
+    height: 4.25em;
+    transform: translate(-43em,-7em);
+  }
+
+  80% {
+    transform: translate(-43em,-3em);
+    width: 6em;
+    height: 4.25em;
+  }
+
+  100% {
+    color: rgba(255,255,255, 255);
+    transform: translate(-43em,0em);
+    width: 6em;
+    height: 4.25em;
+  }
+}
+
+
+p {
+  user-select: none;
+  color:#fff;
+  font-size: 1.25em;
+}
+
+li {
+  user-select: none;
+color: rgb(160,175,0);
+  font-size: 1.25em;
+}
+
+li:Hover {
+  color: rgb(255,255,255);
+}
