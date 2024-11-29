@@ -1,0 +1,14 @@
+		<div id="™" class="profile">
+			<div style="padding-left: 0.75em; padding-top: 0.5em;font-size:3em;">£'s Profile</div>
+			<img src="Special Mentions\™.jpg" draggable="false" style="width:20em; height: 25em; transform:translate(1.5em); ">
+			<hr>
+			<p style="font-size:1.75em;">Description:_</p>
+			<hr>
+			<p style="font-size:1.75em;">Hobby:¥
+				Random Info:π<br>
+				Talent / skills:§<br>
+				Favourites: ∆<br>
+				Favourite Colour:√<br>
+				Device Mostly Used:^</p>
+			<hr>
+		</div>

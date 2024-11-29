@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/No Background/favicon.png" type="icon">
+    <title>The HolocArt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    	.GoButton {
+    		background-color: #651e81;
+    		color: #FFF;
+    		width: 7em;
+    		height: 2.5em;
+    		border-radius: 0.45em;
+            border: 0.1em solid #8722af;
+    		text-align: center;
+    		line-height: 2.5em;
+    		font-size: 2em;
+    		user-select: none;
+
+    	}
+
+    	.Display {
+    		position: absolute;
+    		border-radius: 2em;
+            border-width: 3em;
+            border: 0.2em solid #8722af;
+    		width: 12vw;
+    		height: 17vw;
+    		animation: HorizontalSlide 4.5s linear infinite;
+    	}
+
+    	@keyframes HorizontalSlide {
+    		0% {
+    			top:-75vh;
+    		}
+
+    		85% {
+    			height: 35vh;
+    		}
+
+    		95% {
+    			height: 0;
+    		}
+    		100% {
+    			top: 120vh;
+    			height: 0;
+    		}
+    	}
+
+    </style>
+ </head>
+ <body class="mainbackground" style="background-image: url(background.png);font-size: 0.85vw; height: vh; width:vw; overflow: hidden; scrollbar-width: none;">
+    <img src="icons/no background/favicon.png" style="transform:translate(2em,-25em); width:3em; height:3em; user-select: none; background-color: rgba(0, 0, 0, 0);">
+    <img src="icons/no background/icon.png" style="transform:translate(3em,3em); width:30em; height:30em; user-select: none; background-color: rgba(0, 0, 0, 0);">
+ 	<div style="transform: translate(5em,-5em);">
+        <p style="position:absolute;transform: translate(1em,1em); font-size:4em; color:#e195ff;  ">We Deliver within a Snap</p>
+ 	</div>
+
+<img src="items/Display/0.jpg" class="Display" style="left: 60em; transform: translate(,-99em); animation-delay: 0s;"></img>
+<img src="items/Display/2.jpg" class="Display" style="left: 60em; transform: translate(,-99em); animation-delay: 1.5s;"></img>
+<img src="items/Display/3.jpg" class="Display" style="left: 60em; transform: translate(,-99em); animation-delay: 3s;"></img>
+
+<img src="items/Display/4.jpg" class="Display" style="left: 80em; transform: translate(,-99em); animation-delay: 0.25s;"></img>
+<img src="items/Display/5.jpg" class="Display" style="left: 80em; transform: translate(,-99em); animation-delay: 1.75s;"></img>
+<img src="items/Display/6.jpg" class="Display" style="left: 80em; transform: translate(,-99em); animation-delay: 3.25s;"></img>
+
+<img src="items/Display/7.jpg" class="Display" style="left: 100em; transform: translate(,-99em); animation-delay: 0s;"></img>
+<img src="items/Display/8.jpg" class="Display" style="left: 100em; transform: translate(,-99em); animation-delay: 1.5s;"></img>
+<img src="items/Display/9.png" class="Display" style="left: 100em; transform: translate(,-99em); animation-delay: 3s;"></img>
+
+
+	<a href="home.html">
+ 	<div class="GoButton" style=" position:absolute; top:85%; left:85%;">Proceed</div>
+ 	</a>
+ </body>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const images = document.querySelectorAll(".Display");
+
+
+        const imagesArray = Array.from(images);
+
+
+        setInterval(function() {
+
+            for (let i = 0; i < imagesArray.length; i++) {
+
+                const randomImage = "items/" + Math.floor(Math.random() * 100) + ".png";
+                
+
+                imagesArray[i].src = randomImage;
+            }
+        }, 2000);
+    });
+</script>
+
+
+ </html>
